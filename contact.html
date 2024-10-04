@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | R.S. Sugadhev</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+        </div>
+    </header>
+
+    <div class="contact-container" id="contact">
+        <h1>Contact Me</h1>
+        <p>If you have any questions, feel free to reach out using the form below.</p>
+        
+        <div class="contact-form">
+            <form action="submit_form.php" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+        <div class="contact-info">
+            <h2>Get in Touch</h2>
+            <p><i class="fas fa-envelope"></i> Email: <a href="mailto:sugadhev@example.com">sugadhevravi@gmail.com</a></p>
+            <p><i class="fas fa-phone"></i> Phone: +91934567890</p>
+            <p><i class="fas fa-map-marker-alt"></i> 45X just</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

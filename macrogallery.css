@@ -1,0 +1,80 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+    font-family: 'Lora', serif;
+    background-color: #ffffff;
+    color: #d06c69;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #d06c69;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    margin-right: 60px;
+    transition: color 0.3s;
+}
+
+header a:hover {
+    color: #333333;
+}
+
+
+.gallery-container {
+    padding: 60px;
+    text-align: center;
+}
+
+h1 {
+    color: #d06c69;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    max-width: 100%; 
+}
+
+
+.gallery-item {
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.image-container:hover img {
+    transform: scale(1.1); 
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+}
